@@ -1,0 +1,27 @@
+.App {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.main {
+  display: inline-flex;
+  flex-direction: column;
+  border: 5px dotted rgb(115, 115, 247);
+}
+
+span {
+  font-size: 4rem;
+}
+
+#header {
+  border: 2px solid black;
+  display: inline-block;
+}
+
+#hform {
+  border: 2px solid black;
+  display: inline-flex;
+  flex-direction: column;
+}

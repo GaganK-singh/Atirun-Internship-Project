@@ -1,0 +1,22 @@
+.App {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  box-sizing: border-box;
+  padding: 10px;
+  border: 2px solid rgb(0, 0, 0);
+}
+
+#Screen {
+  box-sizing: border-box;
+  flex-grow: 400;
+  background-color: #8bdcf9;
+}
+
+#navbar {
+  border-top: 2px solid black;
+  display: flex;
+  justify-content: center;
+  flex-grow: 1;
+}

@@ -1,28 +1,26 @@
 import "./App.css";
-import Home from "./Source/Home";
-import Navbar from "./Source/Navbar";
-import Info from "./Source/Info"
-import { BrowserRouter, Route, Routes, Link} from "react-router-dom";
-import Contact from "./Source/Contact";
-import Details from "./Source/Details";
+import { BrowserRouter, Route, Routes, Link } from "react-router-dom";
+import Navbar from "./Page/Navbar";
+import Footer from "./Page/Footer";
+import Content from "./Page/Content";
 
 function App() {
   return (
-    <BrowserRouter>
-      <div className="App">
-        <div className="Screen" id="Screen">
-          <Routes>
-          <Route path="/home" element={<Home />} />
-          <Route path="/info" element={<Info />} />
-          <Route path="/contact" element={<Contact />} />
-          <Route path="/detail" element={<Details />} />
-          </Routes>
-        </div>
-        <div className="navbar" id="navbar">
+    <div className="App">
+      <BrowserRouter>
+        <div className="Navbar">
           <Navbar />
         </div>
-      </div>
-    </BrowserRouter>
+
+        <div className="container-fluid">
+          <Content />
+        </div>
+
+        <div id="footer-content">
+          <Footer />
+        </div>
+      </BrowserRouter>
+    </div>
   );
 }
 

@@ -14,7 +14,8 @@ export default function Borrow() {
             placeholder="eg:- The Alchemist"
             aria-label="default input example"
           />
-        </div><br />
+        </div>
+        <br />
         <div className="form-group">
           <label htmlFor="exampleFormControlTextarea1" className="form-label">
             Library ID:
@@ -25,7 +26,8 @@ export default function Borrow() {
             placeholder="eg:- LIB2023131313"
             aria-label="default input example"
           />
-        </div><br />
+        </div>
+        <br />
         <div className="form-group">
           <label htmlFor="exampleFormControlTextarea1" className="form-label">
             Quantity:
@@ -36,7 +38,8 @@ export default function Borrow() {
             placeholder="eg:- 5"
             aria-label="default input example"
           />
-        </div><br />  
+        </div>
+        <br />
         <button type="submit" className="btn btn-primary">
           Submit
         </button>

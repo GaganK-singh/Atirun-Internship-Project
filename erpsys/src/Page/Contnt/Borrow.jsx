@@ -1,6 +1,22 @@
-import React from "react";
+import React, { useState } from "react";
 
 export default function Borrow() {
+  const { currentState, setCurrentState } = useState({
+    bookName: "",
+    LibId: "",
+    quantity: ""
+  });
+
+
+  let name, value;
+  const changed = (prop) => {
+    name = prop.target.name;
+    value = prop.target.value;
+
+    setCurrentState(...currentState, [name]=value);
+  }
+
+
   return (
     <div>
       <form>
@@ -11,8 +27,11 @@ export default function Borrow() {
           <input
             className="form-control"
             type="text"
+            name="bookName"
             placeholder="eg:- The Alchemist"
             aria-label="default input example"
+            value={currentState.bookName}
+            onChange={changed}
           />
         </div>
         <br />
@@ -23,8 +42,11 @@ export default function Borrow() {
           <input
             className="form-control"
             type="text"
+            name="LibId"
             placeholder="eg:- LIB2023131313"
             aria-label="default input example"
+            value={currentState.LibId}
+            onChange={changed}
           />
         </div>
         <br />
@@ -35,8 +57,11 @@ export default function Borrow() {
           <input
             className="form-control"
             type="text"
+            name="quantity"
             placeholder="eg:- 5"
             aria-label="default input example"
+            value={currentState.quantity}
+            onChange={changed}
           />
         </div>
         <br />

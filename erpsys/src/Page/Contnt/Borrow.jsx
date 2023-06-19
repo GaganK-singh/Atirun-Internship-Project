@@ -1,21 +1,18 @@
 import React, { useState } from "react";
 
 export default function Borrow() {
-  const { currentState, setCurrentState } = useState({
+  const [currentState, setCurrentState] = useState({
     bookName: "",
     LibId: "",
     quantity: ""
   });
 
+  const postData = (tag) => {
+    const name = tag.target.name;
+    const value = tag.target.value;
 
-  let name, value;
-  const changed = (prop) => {
-    name = prop.target.name;
-    value = prop.target.value;
-
-    setCurrentState(...currentState, [name]=value);
-  }
-
+    setCurrentState({ ...currentState, [name]: value });
+  };
 
   return (
     <div>
@@ -31,7 +28,7 @@ export default function Borrow() {
             placeholder="eg:- The Alchemist"
             aria-label="default input example"
             value={currentState.bookName}
-            onChange={changed}
+            onChange={postData}
           />
         </div>
         <br />
@@ -45,8 +42,8 @@ export default function Borrow() {
             name="LibId"
             placeholder="eg:- LIB2023131313"
             aria-label="default input example"
-            value={currentState.LibId}
-            onChange={changed}
+            // value={currentState.LibId}
+            onChange={postData}
           />
         </div>
         <br />
@@ -60,8 +57,8 @@ export default function Borrow() {
             name="quantity"
             placeholder="eg:- 5"
             aria-label="default input example"
-            value={currentState.quantity}
-            onChange={changed}
+            // value={currentState.quantity}
+            onChange={postData}
           />
         </div>
         <br />

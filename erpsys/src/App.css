@@ -65,3 +65,6 @@ a {
 .img-fluid {
   position: fixed;
 }
+#borrowFormSubmit{
+  margin-right: 20px;
+}

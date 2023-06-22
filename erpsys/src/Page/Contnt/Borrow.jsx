@@ -1,12 +1,12 @@
 import React, { useEffect, useState } from "react";
 import { db } from "../../FirebaseConfig";
-import { getFirestore, collection, getDocs, addDoc, getDoc } from "firebase/firestore";
+import { getFirestore, collection, getDocs, addDoc, setDoc } from "firebase/firestore";
 
 export default function Borrow() {
   const [currentState, setCurrentState] = useState({
     bookName: "",
     LibId: "",
-    quantity: "",
+    quantity: ""
   });
 
   const postData = (tag) => {
@@ -16,16 +16,6 @@ export default function Borrow() {
     setCurrentState({ ...currentState, [name]: value });
   };
 
-  // const borrowFormTag = document.getElementById("borrowFormSubmit");
-  // borrowFormTag((event) => {
-  //   event.preventDefault();
-
-  //   addDoc(colRefBorrow, {
-  //     bookName: borrowFormTag.currentState.bookName,
-  //     LibId: Borrow.currentState.LibId,
-  //     quantity: Borrow.currentState.quantity,
-  //   });
-  // });
 
   async function setBorrow(db) {
     const colRefBorrow = collection(db, "borrow");
@@ -34,11 +24,26 @@ export default function Borrow() {
     console.log(userList);
   }
 
-  useEffect (() => {setBorrow(db);})
+  // useEffect(() => { setBorrow(db); })
+
+  
+
+  const saveData = async () => {
+    await setDoc(collection(db, "borrow"), {currentState});
+    console.log(currentState.quantity)
+  }
+
+  const clearData = () => {
+    setCurrentState({
+      bookName: "",
+      LibId: "",
+      quantity: ""
+    });
+  }
 
   return (
     <div>
-      <form id="borrowForm">
+      <form id="borrowForm" method="get">
         <div className="form-group">
           <label htmlFor="exampleFormControlTextarea1" className="form-label">
             Name Of the book:
@@ -84,8 +89,11 @@ export default function Borrow() {
           />
         </div>
         <br />
-        <button type="submit" id="borrowFormSubmit" className="btn btn-primary">
+        <button type="submit" id="borrowFormSubmit" className="btn btn-primary" onClick={saveData}>
           Submit
+        </button>
+        <button type="reset" id="resetFormSubmit" className="btn btn-primary" onClick={clearData}>
+          Clear Data
         </button>
       </form>
     </div>

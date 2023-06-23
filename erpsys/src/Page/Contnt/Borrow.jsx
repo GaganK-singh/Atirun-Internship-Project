@@ -29,7 +29,11 @@ export default function Borrow() {
   
 
   const saveData = async () => {
-    await setDoc(collection(db, "borrow"), {currentState});
+    const docRef = await setDoc(collection(db, "borrow"), {
+      bookName: "",
+      LibId: "",
+      quantity: ""
+    });
     console.log(currentState.quantity)
   }
 

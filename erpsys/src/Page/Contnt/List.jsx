@@ -4,10 +4,11 @@ import { collection, getDocs, doc, query, where, getDoc } from "firebase/firesto
 
 export default function List() {
 
-  const q = query(collection(db, "borrow"), where("status", "==", true));
-
+  // const q = query(collection(db, "borrow"), where("status", "==", true));
+  const collectionRef = collection(db, "borrow");
   const getdata = async () => {
-    const querySnapshot = await getDocs(q);
+    // Here in getDocs() Function we either pass collectionRef or q(which is used for query)
+    const querySnapshot = await getDocs(collectionRef);
     querySnapshot.forEach((doc) => {
       console.log(doc.id, " => ", doc.data());
     });

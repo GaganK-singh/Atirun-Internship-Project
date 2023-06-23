@@ -29,7 +29,7 @@ export default function Borrow() {
 
 
   const saveData = async () => {
-    const awaitfunc = await setDoc(collection(db, "borrow"), {
+    const awaitfunc = await addDoc(collection(db, "borrow"), {
       bookName: currentState.bookName,
       LibId: currentState.LibId,
       quantity: currentState.quantity
@@ -92,7 +92,7 @@ export default function Borrow() {
           />
         </div>
         <br />
-        <button type="submit" id="borrowFormSubmit" className="btn btn-primary" onClick={()=>saveData()}>
+        <button type="submit" id="borrowFormSubmit" className="btn btn-primary" onClick={saveData}>
           Submit
         </button>
         <button type="reset" id="resetFormSubmit" className="btn btn-primary" onClick={clearData}>

@@ -2,7 +2,7 @@ import React from "react";
 
 export default function About() {
   return (
-    <>
+    <div id="about-content-page">
       <div>
         <h1 id="about-heading-h1"><u>About Us!</u></h1>
       </div>
@@ -31,6 +31,6 @@ export default function About() {
           </figcaption>
         </figure>
       </div>
-    </>
+    </div>
   );
 }

@@ -16,17 +16,6 @@ export default function Borrow() {
     setCurrentState({ ...currentState, [name]: value });
   };
 
-
-  async function setBorrow(db) {
-    const colRefBorrow = collection(db, "borrow");
-    const userInstnce = await getDocs(colRefBorrow);
-    const userList = userInstnce.docs.map(doc => doc.data);
-    console.log(userList);
-  }
-
-  useEffect(() => { setBorrow(db); })
-
-
 // **This Issue is Resolved... No change is needed... though it was a firestore problem**
   const saveData = async () => {
     const awaitfunc = await addDoc(collection(db, "borrow"), {
@@ -47,7 +36,7 @@ export default function Borrow() {
   }
 
   return (
-    <div>
+    <div id="borrow-form">
         <div className="form-group">
           <label htmlFor="exampleFormControlTextarea1" className="form-label">
             Name Of the book:

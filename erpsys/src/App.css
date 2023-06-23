@@ -1,16 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap');
+
 .App {
-  /* text-align: center; */
   display: flex;
   flex-direction: column;
   height: 100vh;
   box-sizing: border-box;
-  /* padding: 10px; */
   border: 2px solid rgb(0, 0, 0);
+  color: rgb(230, 234, 237);
+}
+
+.Navbar{
+  border-bottom: 2px solid white;
+}
+
+#footer-content{
+  border-top: 2px solid white;
 }
 
 #footer-content {
   background-color:#3e4451;
-  color: white;
+  
 }
 
 .container-fluid {
@@ -23,12 +32,18 @@
 }
 
 .col-md-2 {
-  background-color: #9DB2BF;
+  background-color: #0A4D68;
+  
+  border-left: 2px solid white;
 }
 
-.col-md-10{
-  background-color: #DDE6ED;
-  border-left: 2px solid rgb(0, 0, 0);
+.col-md-10  {
+  margin: 0;
+  padding: 0;
+  background-color: #088395;
+  border-left: 2px solid white;
+  
+  border-right: 2px solid white;
   overflow: hidden;
 }
 
@@ -40,7 +55,14 @@
 
 a {
   text-decoration: none;
-  color: black;
+}
+a,li{
+  color: white;
+}
+
+input[type="text"]{
+  background-color:rgb(186, 255, 231);
+  border: 2px solid black; 
 }
 
 #about-div {
@@ -58,13 +80,34 @@ a {
 
 #home {
   height: 100%;
+  width: 100%;
   box-sizing: border-box;
-  border: 2px solid red;
+  background-image: url("https://images.unsplash.com/photo-1478760329108-5c3ed9d495a0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80");
+  background-repeat: none;
+  background-size: cover;
 }
 
-.img-fluid {
-  position: fixed;
-}
 #borrowFormSubmit{
   margin-right: 20px;
 }
+
+#home-welcome{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  color: aliceblue;
+  justify-content: center;
+  font-family: 'Dancing Script', cursive;
+}
+
+#welcome-text-home{
+  font-size: 5rem;
+  z-index: 100;
+}
+
+
+#borrow-form, #about-content-page, #return-content-page, #list-content-page{
+  padding: 1.8rem;
+}
+

@@ -28,7 +28,6 @@
   padding: 0;
   background-color: #088395;
   border-left: 2px solid white;
-
   border-right: 2px solid white;
   overflow: hidden;
 }
@@ -96,6 +95,11 @@ input[type="text"] {
 #welcome-text-home {
   font-size: 5rem;
   z-index: 100;
+}
+
+#about-content-page{
+  min-height: 100%;
+  overflow-y: scroll;
 }
 
 #borrow-form,

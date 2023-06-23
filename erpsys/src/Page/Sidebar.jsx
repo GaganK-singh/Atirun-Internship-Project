@@ -5,7 +5,7 @@ export default function Sidebar() {
     <div className='d-sm-none d-md-block d-none d-sm-block'>
         <ul>
             <li><a href="/">Home</a></li>
-            <li><a href="/list">List</a></li>
+            <li><a href="/list">List of Books Borrowed</a></li>
             <li><a href="/borrow">Borrow/Purchase a book</a></li>
             <li><a href="/return">Return book</a></li>
             <li><a href="/about">About Us!</a></li>

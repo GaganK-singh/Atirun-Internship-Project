@@ -1,18 +1,22 @@
 import React, { useEffect, useState } from 'react'
 import { db } from '../../FirebaseConfig';
-import { collection, getDocs } from "firebase/firestore";
+import { collection, getDocs, doc, query, where, getDoc } from "firebase/firestore";
 
 export default function List() {
-  async function setBorrow(db) {
-    const colRefBorrow = collection(db, "borrow");
-    const userInstnce = await getDocs(colRefBorrow);
-    const userList = userInstnce.docs.map(doc => doc.data);
-    console.log(userList);
-  }
-  useEffect(() => { setBorrow(db); })
 
+  const q = query(collection(db, "borrow"), where("status", "==", true));
+
+  const getdata = async () => {
+    const querySnapshot = await getDocs(q);
+    querySnapshot.forEach((doc) => {
+      console.log(doc.id, " => ", doc.data());
+    });
+  }
 
   return (
-    <div id="list-content-page">List</div>
+    <div id="list-content-page">
+      <h1>List of Borrowed Books</h1>
+      <button type="button" class="btn btn-info" onClick={getdata}>Get List</button>
+    </div>
   )
 }

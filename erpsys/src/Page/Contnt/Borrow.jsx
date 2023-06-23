@@ -6,7 +6,7 @@ export default function Borrow() {
   const [currentState, setCurrentState] = useState({
     bookName: "",
     LibId: "",
-    quantity: ""
+    userName: ""
   });
 
   const postData = (tag) => {
@@ -21,9 +21,9 @@ export default function Borrow() {
     const awaitfunc = await addDoc(collection(db, "borrow"), {
       bookName: currentState.bookName,
       LibId: currentState.LibId,
-      quantity: currentState.quantity
+      userName: currentState.userName,
+      status: true,
     });
-    console.log(currentState.quantity);
     clearData();
   }
 
@@ -31,7 +31,7 @@ export default function Borrow() {
     setCurrentState({
       bookName: "",
       LibId: "",
-      quantity: ""
+      userName: ""
     });
   }
 
@@ -60,7 +60,7 @@ export default function Borrow() {
             className="form-control"
             type="text"
             name="LibId"
-            placeholder="eg:- LIB2023131313"
+            placeholder="eg:- 2023131313"
             aria-label="default input example"
             value={currentState.LibId}
             onChange={postData}
@@ -69,15 +69,15 @@ export default function Borrow() {
         <br />
         <div className="form-group">
           <label htmlFor="exampleFormControlTextarea1" className="form-label">
-            Quantity:
+            Your Name:
           </label>
           <input
             className="form-control"
             type="text"
-            name="quantity"
-            placeholder="eg:- 5"
+            name="userName"
+            placeholder="eg:- Ronaldo"
             aria-label="default input example"
-            value={currentState.quantity}
+            value={currentState.userName}
             onChange={postData}
           />
         </div>

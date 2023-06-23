@@ -27,7 +27,7 @@ export default function Borrow() {
   useEffect(() => { setBorrow(db); })
 
 
-
+// **This Issue is Resolved... No change is needed... though it was a firestore problem**
   const saveData = async () => {
     const awaitfunc = await addDoc(collection(db, "borrow"), {
       bookName: currentState.bookName,

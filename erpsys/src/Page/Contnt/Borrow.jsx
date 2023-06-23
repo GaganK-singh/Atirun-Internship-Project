@@ -24,12 +24,16 @@ export default function Borrow() {
     console.log(userList);
   }
 
-  // useEffect(() => { setBorrow(db); })
+  useEffect(() => { setBorrow(db); })
 
-  
+
 
   const saveData = async () => {
-    await setDoc(collection(db, "borrow"), {currentState});
+    const awaitfunc = await setDoc(collection(db, "borrow"), {
+      bookName: currentState.bookName,
+      LibId: currentState.LibId,
+      quantity: currentState.quantity
+    });
     console.log(currentState.quantity)
   }
 
@@ -43,7 +47,6 @@ export default function Borrow() {
 
   return (
     <div>
-      <form id="borrowForm" method="get">
         <div className="form-group">
           <label htmlFor="exampleFormControlTextarea1" className="form-label">
             Name Of the book:
@@ -89,13 +92,12 @@ export default function Borrow() {
           />
         </div>
         <br />
-        <button type="submit" id="borrowFormSubmit" className="btn btn-primary" onClick={saveData}>
+        <button type="submit" id="borrowFormSubmit" className="btn btn-primary" onClick={()=>saveData()}>
           Submit
         </button>
         <button type="reset" id="resetFormSubmit" className="btn btn-primary" onClick={clearData}>
           Clear Data
         </button>
-      </form>
     </div>
   );
 }

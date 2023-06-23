@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function Sidebar() {
   return (
-    <div>
+    <div className='d-sm-none d-md-block d-none d-sm-block'>
         <ul>
             <li><a href="/">Home</a></li>
             <li><a href="/list">List</a></li>

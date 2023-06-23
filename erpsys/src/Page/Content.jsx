@@ -10,10 +10,10 @@ import About from "./Contnt/About";
 export default function Content() {
   return (
     <div className="row">
-        <div className="col-md-2">
+        <div className="col-lg-2 d-sm-none d-md-block d-none">
           <Sidebar />
         </div>
-        <div className="col-md-10">
+        <div className="col-lg-10">
         <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/list" element={<List />} />

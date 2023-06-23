@@ -25,7 +25,6 @@ export default function About() {
           <figcaption class="blockquote-footer">
             Sidney Sheldon{" "}
             <cite title="Source Title">
-              {" "}
               (1917-2007. American writer and producer)
             </cite>
           </figcaption>

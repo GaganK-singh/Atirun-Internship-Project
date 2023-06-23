@@ -8,11 +8,11 @@ function App() {
   return (
     <div className="App">
       <BrowserRouter>
-        <div className="Navbar">
+        <div className="Navbar" id="navID">
           <Navbar />
         </div>
 
-        <div className="container-fluid">
+        <div className="container-fluid ">
           <Content />
         </div>
 

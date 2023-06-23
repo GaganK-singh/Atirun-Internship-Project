@@ -1,48 +1,34 @@
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap");
 
-.App {
-  display: flex;
-  flex-direction: column;
-  height: 100vh;
-  box-sizing: border-box;
-  border: 2px solid rgb(0, 0, 0);
-  color: rgb(230, 234, 237);
-}
-
-.Navbar{
+.Navbar {
   border-bottom: 2px solid white;
 }
 
-#footer-content{
-  border-top: 2px solid white;
-}
-
 #footer-content {
-  background-color:#3e4451;
-  
+  border-top: 2px solid white;
+  background-color: #3e4451;
 }
 
 .container-fluid {
-  min-height: 89%;
+  min-height: 88%;
 }
 
 .row {
   min-height: 100%;
-  background-color: aqua;
 }
 
-.col-md-2 {
-  background-color: #0A4D68;
-  
-  border-left: 2px solid white;
+.col-lg-2 {
+  background-color: #0a4d68;
+  padding:5px;
+  border: 2px solid white;
 }
 
-.col-md-10  {
+.col-lg-10 {
   margin: 0;
   padding: 0;
   background-color: #088395;
   border-left: 2px solid white;
-  
+
   border-right: 2px solid white;
   overflow: hidden;
 }
@@ -56,18 +42,20 @@
 a {
   text-decoration: none;
 }
-a,li{
+
+a,
+li {
   color: white;
 }
 
-input[type="text"]{
-  background-color:rgb(186, 255, 231);
-  border: 2px solid black; 
+input[type="text"] {
+  background-color: rgb(186, 255, 231);
+  border: 2px solid black;
 }
 
 #about-div {
   display: flex;
-  align-items: end;
+  align-items: flex-end;
   justify-content: center;
   box-sizing: border-box;
   margin-top: 10vh;
@@ -87,27 +75,32 @@ input[type="text"]{
   background-size: cover;
 }
 
-#borrowFormSubmit{
+#borrowFormSubmit {
   margin-right: 20px;
 }
 
-#home-welcome{
+#home-welcome {
   width: 100%;
   height: 100%;
   display: flex;
   align-items: center;
   color: aliceblue;
   justify-content: center;
-  font-family: 'Dancing Script', cursive;
+  font-family: "Dancing Script", cursive;
 }
 
-#welcome-text-home{
+.blockquote-footer {
+  color: white;
+}
+
+#welcome-text-home {
   font-size: 5rem;
   z-index: 100;
 }
 
-
-#borrow-form, #about-content-page, #return-content-page, #list-content-page{
+#borrow-form,
+#about-content-page,
+#return-content-page,
+#list-content-page {
   padding: 1.8rem;
 }
-

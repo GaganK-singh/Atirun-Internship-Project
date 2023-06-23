@@ -34,7 +34,8 @@ export default function Borrow() {
       LibId: currentState.LibId,
       quantity: currentState.quantity
     });
-    console.log(currentState.quantity)
+    console.log(currentState.quantity);
+    clearData();
   }
 
   const clearData = () => {
@@ -72,7 +73,7 @@ export default function Borrow() {
             name="LibId"
             placeholder="eg:- LIB2023131313"
             aria-label="default input example"
-            // value={currentState.LibId}
+            value={currentState.LibId}
             onChange={postData}
           />
         </div>
@@ -87,7 +88,7 @@ export default function Borrow() {
             name="quantity"
             placeholder="eg:- 5"
             aria-label="default input example"
-            // value={currentState.quantity}
+            value={currentState.quantity}
             onChange={postData}
           />
         </div>

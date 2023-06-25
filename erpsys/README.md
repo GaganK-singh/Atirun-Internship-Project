@@ -7,6 +7,6 @@
 
 ![Screenshot 2023-06-26 032140](https://github.com/GaganK-singh/Atirun-Internship-Project/assets/41460460/a80c4c64-ecd5-4a98-a368-c11baccf928d)
 
-![Screenshot 2023-06-26 032209](https://github.com/GaganK-singh/Atirun-Internship-Proj
+![Screenshot 2023-06-26 032209](https://github.com/GaganK-singh/Atirun-Internship-Project/assets/41460460/f4ec6bbe-eb58-44b0-80c3-6e6d4672d713)
 ![Screenshot 2023-06-26 032222](https://github.com/GaganK-singh/Atirun-Internship-Project/assets/41460460/48771dba-d320-4f7d-a90a-7bd6398e98c3)
-ect/assets/41460460/f4ec6bbe-eb58-44b0-80c3-6e6d4672d713)
+

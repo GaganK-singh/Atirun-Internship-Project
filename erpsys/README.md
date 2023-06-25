@@ -5,6 +5,8 @@
 
 # ***SreenShots***
 
-![Screenshot 2023-06-26 032140](https://github.com/GaganK-singh/react-atirun/assets/41460460/8c826763-b1f2-4d12-9383-e3edf98ac429)
-![Screenshot 2023-06-26 032209](https://github.com/GaganK-singh/react-atirun/assets/41460460/8581b2ba-1600-4af6-a9e5-5d8d1cebd4e4)
-![Screenshot 2023-06-26 032222](https://github.com/GaganK-singh/react-atirun/assets/41460460/2f87fb8b-f013-4271-a8ad-fac28e74760a)
+![Screenshot 2023-06-26 032140](https://github.com/GaganK-singh/Atirun-Internship-Project/assets/41460460/a80c4c64-ecd5-4a98-a368-c11baccf928d)
+
+![Screenshot 2023-06-26 032209](https://github.com/GaganK-singh/Atirun-Internship-Proj
+![Screenshot 2023-06-26 032222](https://github.com/GaganK-singh/Atirun-Internship-Project/assets/41460460/48771dba-d320-4f7d-a90a-7bd6398e98c3)
+ect/assets/41460460/f4ec6bbe-eb58-44b0-80c3-6e6d4672d713)

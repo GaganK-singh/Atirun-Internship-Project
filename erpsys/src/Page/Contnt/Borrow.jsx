@@ -1,6 +1,6 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { db } from "../../FirebaseConfig";
-import { collection, addDoc} from "firebase/firestore";
+import { getFirestore, collection, getDocs, addDoc, setDoc } from "firebase/firestore";
 
 export default function Borrow() {
   const [currentState, setCurrentState] = useState({
@@ -18,7 +18,7 @@ export default function Borrow() {
 
 // **This Issue is Resolved... No change is needed... though it was a firestore problem**
   const saveData = async () => {
-    await addDoc(collection(db, "borrow"), {
+    const awaitfunc = await addDoc(collection(db, "borrow"), {
       bookName: currentState.bookName,
       LibId: currentState.LibId,
       userName: currentState.userName,

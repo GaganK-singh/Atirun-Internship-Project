@@ -1,6 +1,5 @@
 import "./App.css";
-import React from "react";
-import { BrowserRouter, Route, Routes, Link } from "react-router-dom";
+import { BrowserRouter} from "react-router-dom";
 import Navbar from "./Page/Navbar";
 import Footer from "./Page/Footer";
 import Content from "./Page/Content";

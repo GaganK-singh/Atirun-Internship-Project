@@ -108,3 +108,8 @@ input[type="text"] {
 #list-content-page {
   padding: 1.8rem;
 }
+
+.list-group-item {
+  font-size: large;
+  background-color: rgb(186, 255, 231);;
+}

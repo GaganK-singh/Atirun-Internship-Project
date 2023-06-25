@@ -18,6 +18,7 @@ export default function List() {
       console.log(doc.id, " => ", doc.data());
       let continuum = doc.data().bookName;
       const nodee = document.createElement("li");
+      nodee.className = "list-group-item";
       const textnode = document.createTextNode(continuum);
       nodee.appendChild(textnode);
       document.getElementById("bookList").appendChild(nodee);

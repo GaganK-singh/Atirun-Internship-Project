@@ -7,7 +7,14 @@ import { getFirestore } from 'firebase/firestore';
 // Your web app's Firebase configuration
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
-  // Your Firebase Configurations
+  apiKey: "AIzaSyB8-dBX8u7D-3y8XkywuMYZc_Soz5q4nWE",
+  authDomain: "erpsystem-a1383.firebaseapp.com",
+  databaseURL: "https://erpsystem-a1383-default-rtdb.firebaseio.com",
+  projectId: "erpsystem-a1383",
+  storageBucket: "erpsystem-a1383.appspot.com",
+  messagingSenderId: "40125131382",
+  appId: "1:40125131382:web:3d94228e9677b824e30d57",
+  measurementId: "G-Q697SJTEHD"
 };
 
 // Initialize Firebase

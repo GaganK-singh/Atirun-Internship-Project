@@ -1,5 +1,4 @@
 import "./App.css";
-import { BrowserRouter} from "react-router-dom";
 import Navbar from "./Page/Navbar";
 import Footer from "./Page/Footer";
 import Content from "./Page/Content";
@@ -7,7 +6,6 @@ import Content from "./Page/Content";
 function App() {
   return (
     <div className="App">
-      <BrowserRouter>
         <div className="Navbar" id="navID">
           <Navbar />
         </div>
@@ -19,7 +17,6 @@ function App() {
         <div id="footer-content">
           <Footer />
         </div>
-      </BrowserRouter>
     </div>
   );
 }

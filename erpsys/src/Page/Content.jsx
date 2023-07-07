@@ -8,6 +8,7 @@ import Return from "./Contnt/Return";
 import About from "./Contnt/About";
 
 export default function Content() {
+  
   return (
     <div className="row">
         <div className="col-lg-2 d-sm-none d-md-block d-none">
@@ -21,6 +22,7 @@ export default function Content() {
             <Route path="/return" element={<Return />} />
             <Route path="/about" element={<About />} />
         </Routes>
+        
         </div>
     </div>
   );

@@ -7,7 +7,7 @@ import { getFirestore } from 'firebase/firestore';
 // Your web app's Firebase configuration
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
-  apiKey: "AIzaSyB8-dBX8u7D-3y8XkywuMYZc_Soz5q4nWE",
+  apiKey: process.env.REACT_APP_API_KEY,
   authDomain: "erpsystem-a1383.firebaseapp.com",
   databaseURL: "https://erpsystem-a1383-default-rtdb.firebaseio.com",
   projectId: "erpsystem-a1383",

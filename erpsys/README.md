@@ -1,7 +1,9 @@
 # ***Project Desciption:-***
 
-***As an intern at Atirun Tech, my project revolves around developing an ERP (Enterprise Resource Planning) system specifically designed for Library Management. This system focuses on implementing create and read operations, enabling users to easily create new records and access existing data. Throughout this internship, I will be working with HTML, CSS, JavaScript, JSX, and the ReactJS framework for frontend development, while utilizing Firestore as the database. This hands-on experience will provide me with valuable insights into frontend web development and database management, as I contribute to building a user-friendly solution that streamlines library management processes.***
+***As an intern at Atirun Tech, my project revolves around developing an ERP (Enterprise Resource Planning) system specifically designed for Library Management. This system focuses on implementing create and read operations, enabling users to create new records and access existing data easily. Throughout this internship, I will work with HTML, CSS, JavaScript, JSX, and the ReactJS framework for frontend development, while utilizing Firestore as the database. This hands-on experience will provide valuable insights into front-end web development and database management, as I contribute to building a user-friendly solution that streamlines library management processes.***
 
+# ***Project Deployment Link***
+https://erpsystemlibrary.netlify.app/
 
 # ***SreenShots***
 

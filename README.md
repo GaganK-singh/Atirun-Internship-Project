@@ -1,5 +1,5 @@
-# React-atirun
-Projects created during the period of Atirun Summer Internship as an intenship project.
+# React-Atirun
+Projects created during the period of the Atirun Summer Internship as an internship project.
 
-Open erpsys repo to overlook the project
+Open "erpsys" repo to overlook the project
 
